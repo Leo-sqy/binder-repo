@@ -1,6 +1,6 @@
 [[source]]
 name = "pypi"
-url = "https://pypi.org/simple"
+url = "-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com"
 verify_ssl = true
 
 [dev-packages]
@@ -11,14 +11,14 @@ mkdocs="*"
 pytest-cov = "*"
 
 [packages]
+numpy="*"
+torch="*"
+torchvision="*"
 pandas="*"
-geopandas="==0.6.0"
-pyspark="==3.1.2"
 attrs="*"
 ipykernel = "*"
 apache-sedona="==1.1.0"
 matplotlib = "*"
-descartes = "*"
 
 [requires]
 python_version = "3.7"
